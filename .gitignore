@@ -1,0 +1,7 @@
+**/Backup/
+**/Cache/
+**/Index/
+**/Installed Packages/
+**/Local/
+**/.sublime/
+**/Packages/[^U]/

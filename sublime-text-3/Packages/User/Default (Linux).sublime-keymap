@@ -1,0 +1,42 @@
+[
+    { "keys": ["alt+/"], "command": "auto_complete" },
+    { "keys": ["alt+/"], "command": "replace_completion_with_auto_complete", "context":
+        [
+            { "key": "last_command", "operator": "equal", "operand": "insert_best_completion" },
+            { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+            { "key": "setting.tab_completion", "operator": "equal", "operand": true }
+        ]
+    },
+    // HTML, XML close tag
+    { "keys": ["/"], "command": "close_tag", "args": { "insert_slash": true }, "context":
+        [
+            { "key": "selector", "operator": "equal", "operand": "(text.html, text.xml) - string - comment", "match_all": true },
+            { "key": "preceding_text", "operator": "regex_match", "operand": ".*<$", "match_all": true },
+            { "key": "setting.auto_close_tags" }
+        ]
+    },
+    //{ "keys": ["f1"], "command": "goto_documentation" },
+    { "keys": ["ctrl+alt+shift+c"], "command": "color_pick" },
+
+    { "keys": ["ctrl+alt+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
+    
+    //filebrowser
+    { 
+      "keys": ["f8"], 
+      "command": "dired", 
+      "args": { "immediate": true } 
+    },
+    
+    //insertdate, overriding defaults
+    { 
+        "keys": ["ctrl+f5", "ctrl+d"],
+        "command": "insert_date",
+        "args": {"format": "%Y%m%d"} 
+    },
+
+    { "keys": ["alt+up"], "command": "select_lines", "args": {"forward": false} },
+    { "keys": ["alt+down"], "command": "select_lines", "args": {"forward": true} },
+
+    //insert nums
+    { "keys": ["ctrl+alt+n"], "command": "prompt_insert_nums" },
+]
