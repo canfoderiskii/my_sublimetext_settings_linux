@@ -4,4 +4,12 @@
 **/Installed Packages/
 **/Local/
 **/.sublime/
-**/Packages/[^U]/
+**/Packages/[^U]*/
+**/Packages/User/FileHistory*
+**/Packages/User/encoding_cache*
+**/Packages/User/Package Control.cache/
+**/Packages/User/*.last-run
+**/Packages/User/*.merged-ca-bundle
+**/Packages/User/*.user-ca-bundle
+**/Packages/User/**/*.tmTheme
+**/Packages/**/*.bak
