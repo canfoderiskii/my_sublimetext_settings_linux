@@ -13,3 +13,5 @@
 **/Packages/User/*.user-ca-bundle
 **/Packages/User/**/*.tmTheme
 **/Packages/**/*.bak
+**/Packages/
+
